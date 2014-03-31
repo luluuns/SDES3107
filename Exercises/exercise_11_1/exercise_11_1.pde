@@ -9,5 +9,3 @@ char letter5 = 'E';
 
 
 println(letter,letter2,letter3,letter4,letter5);
-
-
