@@ -1,24 +1,26 @@
 //Write a function to draw a shape to the screen multiple times, each at a 
 // different position.
 
-void setup() 
-{ 
-size(250, 250); 
-smooth(); 
+void setup() { 
+size(500, 500);
+noStroke();
+smooth();
 noLoop();
 }
-void draw() 
-{
-drawX(160, 20, 0, 5, 60);
-drawX(0, 10, 30, 20, 60);
-drawX(255, 2, 20, 38, 60); 
-}
-void drawX(int gray, int weight, int x, int y, int size) {
-stroke(gray);
-strokeWeight(weight);
-line(x, y, x+size, y+size);
-line(x+size, y, x, y+size);
-}
+void draw() {
+fill(255);
+ellipse(75, 75, 100, 100);
+fill(0);
+ellipse(50+10, 50, 30, 30); 
+fill(255);
+ellipse(50+16, 45, 6, 6);
 
+
+ellipse(75+150, 75, 100, 100);
+fill(0);
+ellipse(50+10+150, 50, 30, 30); 
+fill(255);
+ellipse(50+16+150, 45, 6, 6);
+}
 
 
